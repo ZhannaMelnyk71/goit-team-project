@@ -1,0 +1,108 @@
+.hero {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #2f303a;
+  max-width: 480px;
+  height: 400px;
+  // max-width: 1600px;
+  // height: 600px;
+  background-image: var(--hero-bg-gradient),
+    url(../images/hero/hero-main-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  @include retina {
+    background-image: var(--hero-bg-gradient),
+      url(../images/hero/hero-main-mobile-2x.jpg);
+  }
+
+  @include tablet {
+    max-width: 768px;
+    background-image: var(--hero-bg-gradient),
+      url(../images/hero/hero-main-tablet.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @include retina {
+      background-image: var(--hero-bg-gradient),
+        url(../images/hero/hero-main-tablet-2x.jpg);
+    }
+  }
+
+  @include desktop {
+    max-width: 1600px;
+    height: 600px;
+    background-image: var(--hero-bg-gradient), url(../images/hero/hero-main.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @include retina {
+      background-image: var(--hero-bg-gradient),
+        url(../images/hero/hero-main-2x.jpg);
+    }
+  }
+}
+
+.hero__container {
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  text-align: center;
+}
+
+.hero__title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  max-width: 360px;
+
+  color: var(--second-title-color);
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.61;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+.hero__btn {
+  padding: 10px;
+  min-width: 200px;
+  // min-width: 216px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: transparent;
+  border-radius: 4px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  color: var(--second-title-color);
+  background-color: var(--accent-color);
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  &:hover,
+  &:focus {
+    color: var(--main-title-color);
+  }
+  @media screen and (min-width: 1200px) {
+    min-width: 216px;
+  }
+}
