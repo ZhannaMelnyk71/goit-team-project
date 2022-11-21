@@ -462,28 +462,27 @@ body {
   fill: currentColor;
 }
 
-.button__shop-now {
+.header__shop-now-btn {
   display: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
-  .button__shop-now {
+  .header__shop-now-btn {
     display: block;
-    min-width: 95px;
-    height: 40px;
-    padding: 0;
+    min-width: 102px;
+    height: 46px;
+    padding: 16px 20px;
     background: #86e543;
-    border: transparent;
     border-radius: 16px;
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.57;
+    line-height: 1;
     text-align: center;
     letter-spacing: -0.03em;
     color: #000000;
   }
 }
-.button__shop-now:hover, .button__shop-now:focus {
+.header__shop-now-btn:hover, .header__shop-now-btn:focus {
   box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5), 0px 4px 10px rgba(255, 255, 255, 0.1);
 }
 

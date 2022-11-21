@@ -98,20 +98,20 @@
   fill: currentColor;
 }
 
-.button__shop-now {
+.header__shop-now-btn {
   display: none;
   @media screen and (min-width: 768px) {
     display: block;
-    min-width: 95px;
-    height: 40px;
-    padding: 0;
+    min-width: 102px;
+    height: 46px;
+    padding: 16px 20px;
     background: #86e543;
-    border: transparent;
+    // border: transparent;
     border-radius: 16px;
 
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.57;
+    line-height: 1;
     text-align: center;
     letter-spacing: -0.03em;
 
