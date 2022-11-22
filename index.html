@@ -18,6 +18,9 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
@@ -92,6 +95,30 @@
         </div>
       </div>
     </header>
+
+<!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">
+      <h1 class="swiper-title"></h1>
+      <p>One place for everything you want</p>
+    </div>
+    <div class="swiper-slide">
+      <h1 class="swiper-title"></h1>
+      <p>Best shop for buying gaming products</p>
+    </div>
+    <div class="swiper-slide">
+      <h1 class="swiper-title"></h1>
+      <p>High-quality products in lowest price</p>
+    </div>
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+</div>
 
     <main>
       <!-- Hero -->
@@ -728,5 +755,6 @@
     </div> -->
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   </body>
 </html>
